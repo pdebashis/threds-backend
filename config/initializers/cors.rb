@@ -18,7 +18,7 @@
 # config/initializers/cors.rb
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'http://localhost:3001' # Replace with your Vite/React port if different
+    origins 'http://localhost:3001', 'https://threds-frontend.onrender.com'
 
     resource '*',
       headers: :any,
